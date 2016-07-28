@@ -16,15 +16,18 @@
             x:Name="CanvasP1"
             Width="100"
             Height="100"
-            Margin="259,180,1081,0"
-            VerticalAlignment="Top">
+            Margin="86,174,1254,0"
+            VerticalAlignment="Top"
+            Background="#FFD3E7E8">
             <Image
                 x:Name="PlayerImage1"
                 Canvas.Left="0"
                 Canvas.Top="0"
                 Width="100"
                 Height="100"
-                Source="{Binding Image}" AllowDrop="True">
+                AllowDrop="True"
+                Loaded="Image_Loaded"
+                Source="{Binding Image}">
 
 
                 <Image.RenderTransform>
@@ -38,14 +41,17 @@
             x:Name="CanvasP2"
             Width="100"
             Height="100"
-            Margin="259,280,1081,0"
-            VerticalAlignment="Top">
+            Margin="86,274,1254,0"
+            VerticalAlignment="Top"
+            Background="#FFF1DDDD">
             <Image
                 x:Name="PlayerImage2"
                 Canvas.Left="0"
                 Canvas.Top="0"
                 Width="100"
-                Height="100" Source="Assets/s6vste3a.bmp">
+                Height="100"
+                Loaded="LowerImage_Loaded"
+                Source="{Binding Image}">
                 <Image.RenderTransform>
                     <TranslateTransform x:Name="MovePlayer2" X="0" Y="0" />
                 </Image.RenderTransform>

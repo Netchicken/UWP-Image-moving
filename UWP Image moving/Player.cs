@@ -11,7 +11,7 @@ namespace UWP_Image_moving
     public class Player
     {
         public string Name { get; set; }
-        public string Image { get; set; }
+        public Image Image { get; set; }
 
         public int Position { get; set; }
 
